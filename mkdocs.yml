@@ -19,8 +19,8 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
-      primary: blue
-      accent: cyan
+      primary: cyan
+      accent: blue
     - scheme: slate
       toggle:
         icon: material/toggle-switch
@@ -52,6 +52,9 @@ markdown_extensions:
 
 extra:
   social:
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@PlaaasmaMC
+      name: Developer on Youtube
     - icon: fontawesome/brands/discord
-      link: https://dsc.gg/akel-studios
-      name: AKEL on Discord
+      link: https://discord.gg/26atA9YxDa
+      name: Official discord server

@@ -1,17 +1,18 @@
-# Welcome to MkDocs
+---
+hide:
+  - navigation
+  - toc
+---
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+<center>
 
-## Commands
+# Welcome to The Time Vortex
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+The Time Vortex mod is a mod developed by [PlaaasmaMC](https://www.youtube.com/@PlaaasmaMC) and is available on [modrinth](https://modrinth.com/mod/the-time-vortex) and [curseforge](https://www.curseforge.com/minecraft/mc-mods/the-time-vortex)
+<br>
+The Time Vortex mod is based of the popular TV Series Doctor Who and adds various new blocks and the TARDIS
 
-## Project layout
+!!! warning
+    The time vortex mod is currently undergoing a recode and information on here might be outdated
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+</center>

@@ -5,7 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="060c3ab7-3410-4abf-9df7-ba2279a4f030" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/blocks/Artron_Equalizer.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/blocks/Auto_Grounding_Module.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/blocks/Bio_Security_Module.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/blocks/Coordinate_Designator_Module.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/blocks/Coordinate_Keypad_Module.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/blocks/Entry_Size_Manipulator_Module.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/blocks/Exterior_Scanner.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/blocks/Roundels.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/blocks/Tardis_Interior_Door.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/blocks/Throttle_Module.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/blocks/Time_Vortex_Interface_Module.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/computercraft/examples.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/computercraft/methods.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/items/11D_Upgrade.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/items/Size_Designator.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/items/Size_Upgrade.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/items/Space_Time_Wrench.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/items/TARDIS_Key.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/items/Vortex_Core.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +37,9 @@
     <branch-grouping />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -25,15 +49,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jortv/PycharmProjects/TheTmeVortexWiki&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/jortv/PycharmProjects/TheTmeVortexWiki",
+    "settings.editor.selected.configurable": "preferences.general"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Run" type="ShConfigurationType">
       <option name="SCRIPT_TEXT" value="mkdocs serve" />

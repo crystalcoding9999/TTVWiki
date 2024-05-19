@@ -1,0 +1,57 @@
+site_name: The time vortex Wiki
+site_url: https://thetimevortex.duckdns.org
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: blue
+      accent: cyan
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: blue
+      accent: cyan
+
+plugins:
+  - search:
+      lang: en
+  - glightbox
+
+markdown_extensions:
+    - def_list
+    - attr_list
+    - md_in_html
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - codehilite:
+        guess_lang: false
+    - toc:
+        permalink: true
+    - admonition
+    - pymdownx.superfences
+    - pymdownx.emoji:
+        emoji_index: !!python/name:material.extensions.emoji.twemoji
+        emoji_generator: !!python/name:material.extensions.emoji.to_svg
+    - tables
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://dsc.gg/akel-studios
+      name: AKEL on Discord

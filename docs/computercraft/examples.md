@@ -22,6 +22,7 @@ It does not matter whether the Computer and Ender Pocket Computer are Advanced o
 <br>
 First the code for the computer that is connected to the Time Vortex Interface
 
+`pastebin get ZauVCGtU computer.lua`
 ```lua title="computer.lua" linenums="1"
 peripheral.find("modem", rednet.open)
 local tardis = peripheral.find("vortexmod:vortex_interface_be") or error("No Time Vortex Interfce connected!")
@@ -58,6 +59,7 @@ Then the code for the Ender Pocket Computer
 <br>
 Make sure to change the value of `tardis_id` to the id of the computer connected to the Time Vortex Interface
 
+`pastebin get Dp73uTCF pocket.lua`
 ```lua title="pocket.lua" linenums="1"
 rednet.open("back")
 
@@ -96,6 +98,7 @@ This script will let you have the functionality of a keypad without needing a ke
 
 For this script you will only need a computer, advanced is not required
 
+`pastebin get an90Ma4T panel.lua`
 ```lua title="panel.lua" linenums="1"
 local tardis = peripheral.find("vortexmod:vortex_interface_be")
 

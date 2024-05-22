@@ -2,6 +2,11 @@ On this page you can find a few example scripts
 
 ## TARDIS recall script
 
+This script will allow you to move your TARDIS using a pocket computer
+
+<br>
+<br>
+
 For this script you will need:
 <br>
 1. Computer
@@ -34,6 +39,15 @@ while true do
     
     if tardis.enableThrottle() then
         rednet.send(0, {status="success"})
+        
+        -- ensures tardis does not stay in the time vortex when auto land is disabled
+        repeat
+            sleep()
+        until tardis.readyToLand()
+        
+        sleep(0.1)
+        
+        tardis.disableThrottle()
     else
         rednet.send(0, {status="failed"})
     end
@@ -71,5 +85,75 @@ while true do
            end
        end 
     end
+end
+```
+
+## TARDIS control panel
+
+This script will let you have the functionality of a keypad without needing a keypad
+
+<br>
+
+For this script you will only need a computer, advanced is not required
+
+```lua title="panel.lua" linenums="1"
+local tardis = peripheral.find("vortexmod:vortex_interface_be")
+
+while true do
+    local currentTar = tardis.getTargetLocation()
+    local currentPos = tardis.getExtLocation()
+
+    term.setCursorPos(1,1)
+    term.clear()
+    print("Current Position: ".. currentPos.x .. " " .. currentPos.y .. " " .. currentPos.z)
+    print("Current Target: ".. currentTar.x .. " " .. currentTar.y .. " " .. currentTar.z)
+
+
+    print("Enter X coordinate (~ to leave unchanged): ")
+    local x = read()
+    if x == "~" then
+        x = currentTar.x
+    else
+        x = tonumber(x)
+    end
+
+    print("Enter Y coordinate (~ to leave unchanged): ")
+    local y = read()
+    if y == "~" then
+        y = currentTar.y
+    else
+        y = tonumber(y)
+    end
+
+    print("Enter Z coordinate (~ to leave unchanged): ")
+    local z = read()
+    if z == "~" then
+        z = currentTar.z
+    else
+        z = tonumber(z)
+    end
+
+    tardis.setCoords(x .. " " .. y .. " " .. z)
+
+    print("Enable auto pilot? (y/N)")
+
+    if (read() == "y") then
+        tardis.enableThrottle()
+        
+        term.clear()
+        term.setCursorPos(1,1)
+
+        print("Travelling to " .. x .. " " .. y .. " " .. z)
+        repeat
+            term.setCursorPos(1,2)
+            term.clearLine()
+            print("ETA " .. tardis.getFlightTime())
+            sleep()
+        until tardis.readyToLand()
+
+        sleep(.1)
+        tardis.disableThrottle()
+    end
+
 end
 ```

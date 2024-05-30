@@ -34,6 +34,11 @@ jobs:
           pip install mkdocs-glightbox
           pip install pillow cairosvg mike
 
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
       - name: Get version
         id: get_version
         run: echo "VERSION=$(cat VERSION)" >> $GITHUB_ENV
@@ -42,11 +47,5 @@ jobs:
         env:
           VERSION: ${{ env.VERSION }}
         run: |
-          mike deploy $VERSION
-          mike set-default latest $VERSION
-
-      - name: Push changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
+          mike deploy $VERSION --push --update-aliases
+          mike set-default latest $VERSION --push

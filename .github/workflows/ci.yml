@@ -44,10 +44,13 @@ jobs:
         run: echo "VERSION=$(cat VERSION)" >> $GITHUB_ENV
 
       - name: Fetch gh-pages
-        run: |
-          git fetch origin gh-pages:gh-pages
-          git checkout gh-pages
-          git pull origin gh-pages
+        run: git fetch origin gh-pages:gh-pages
+
+      - name: Checkout gh-pages
+        run: git checkout gh-pages
+
+      - name: Copy mkdocs.yml
+        run: cp ../mkdocs.yml .
 
       - name: Deploy with Mike
         env:

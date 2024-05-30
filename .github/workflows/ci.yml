@@ -49,9 +49,6 @@ jobs:
       - name: Checkout gh-pages
         run: git checkout gh-pages
 
-      - name: Copy mkdocs.yml
-        run: cp mkdocs.yml .
-
       - name: Deploy with Mike
         env:
           VERSION: ${{ env.VERSION }}

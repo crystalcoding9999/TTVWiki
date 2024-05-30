@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v3
         with:
           python-version: '3.x'
 
@@ -48,9 +48,6 @@ jobs:
 
       - name: Checkout gh-pages
         run: git checkout gh-pages
-
-      - name: Verify directory structure
-        run: ls -la
 
       - name: Copy mkdocs.yml
         run: cp mkdocs.yml .

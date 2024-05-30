@@ -49,8 +49,11 @@ jobs:
       - name: Checkout gh-pages
         run: git checkout gh-pages
 
+      - name: Verify directory structure
+        run: ls -la
+
       - name: Copy mkdocs.yml
-        run: cp ../mkdocs.yml .
+        run: cp mkdocs.yml .
 
       - name: Deploy with Mike
         env:

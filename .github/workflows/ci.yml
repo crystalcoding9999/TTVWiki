@@ -58,7 +58,7 @@ jobs:
         env:
           VERSION: ${{ env.VERSION }}
         run: |
-          mike deploy $VERSION latest
+          mike deploy $VERSION latest --ignore-remote-status
           mike set-default latest $VERSION --push
         working-directory: ${{ github.workspace }}
 

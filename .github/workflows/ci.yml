@@ -58,7 +58,7 @@ jobs:
         env:
           VERSION: ${{ env.VERSION }}
         run: |
-          mike deploy $VERSION --push --update-aliases
+          mike deploy --push --update-aliases $VERSION
           mike set-default latest $VERSION --push
         working-directory: ${{ github.workspace }}
 

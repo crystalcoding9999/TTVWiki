@@ -1,5 +1,7 @@
 site_name: The time vortex Wiki
 site_url: https://thetimevortex.duckdns.org
+repo_name: The Time Vortex mod
+repo_url: https://github.com/Plaaasma/TimeVortexMod
 
 theme:
   name: material
@@ -58,3 +60,5 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/26atA9YxDa
       name: Official discord server
+  version:
+    provider: mike

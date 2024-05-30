@@ -50,7 +50,9 @@ jobs:
         run: git checkout gh-pages
 
       - name: list directory
-        run: ls
+        run: |
+          ls
+          git rev-parse --abbrev-ref HEAD
 
       - name: Deploy with Mike
         env:

@@ -43,6 +43,11 @@ jobs:
         id: get_version
         run: echo "VERSION=$(cat VERSION)" >> $GITHUB_ENV
 
+      - name: Fetch gh-pages
+        run: |
+          git fetch origin gh-pages:gh-pages
+          git checkout gh-pages
+
       - name: Deploy with Mike
         env:
           VERSION: ${{ env.VERSION }}

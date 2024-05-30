@@ -49,6 +49,9 @@ jobs:
       - name: Checkout gh-pages
         run: git checkout gh-pages
 
+      - name: list directory
+        run: ls
+
       - name: Deploy with Mike
         env:
           VERSION: ${{ env.VERSION }}

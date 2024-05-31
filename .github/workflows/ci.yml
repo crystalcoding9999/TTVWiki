@@ -59,7 +59,7 @@ jobs:
           VERSION: ${{ env.VERSION }}
         run: |
           mike deploy --push --update-aliases --ignore-remote-status -b gh-pages "$VERSION" latest
-          mike set-default latest $VERSION --push
+          mike set-default latest --push
         working-directory: ${{ github.workspace }}
 
 

@@ -11,6 +11,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://thetimevortex.duckdns.org/1.0/sneakpeaks/</loc>
+         <lastmod>2024-05-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://thetimevortex.duckdns.org/1.0/blocks/Artron_Disruptor/</loc>
          <lastmod>2024-05-31</lastmod>
          <changefreq>daily</changefreq>

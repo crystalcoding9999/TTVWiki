@@ -67,5 +67,43 @@ Still a Work In Progress
     ![!Picture of the retexture](https://imgur.com/x5BggeS.png){ align=center }
 
 A potential new key texture created by `Cassettes`
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+---
+
+# Time Vortex Interface Re-texture
+!!! picture inline end
+    ![!Picture of the retexture](https://imgur.com/7iEzrsB.png){ align=center }
+
+A potential new interface texture created by `Cassettes`
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+---
+
+# Tardis Re-texture
+!!! picture inline end
+    ![!Picture of the retexture](https://imgur.com/LO8233E.png){ align=center }
+
+A potential new tardis texture created by `Cassettes`
 
 </center>
